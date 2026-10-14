@@ -1,0 +1,1472 @@
+/* =========================================================================
+   CAMPUS CONNECT — Modern Dark SaaS Design System
+   Campus Event & Club Management System (Phase 1, 3, 4 & 5)
+   Color Palette: Deep Navy/Purple, Indigo (#6366F1), Purple (#8B5CF6)
+   ========================================================================= */
+
+/* -------------------------------------------------------------------------
+   Root & Typography
+   ------------------------------------------------------------------------- */
+.root {
+    -fx-background-color: #0B0A1A;
+    -fx-font-family: 'Segoe UI', -apple-system, 'SF Pro Display', 'Roboto', 'Arial', sans-serif;
+}
+
+/* -------------------------------------------------------------------------
+   Authentication / Login Screen Styles
+   ------------------------------------------------------------------------- */
+.login-root {
+    -fx-background-color: radial-gradient(center 50% 35%, radius 65%, #181534, #0B0A1A 85%);
+}
+
+.login-card {
+    -fx-background-color: #14132A;
+    -fx-border-color: rgba(255, 255, 255, 0.08);
+    -fx-border-width: 1px;
+    -fx-border-radius: 16px;
+    -fx-background-radius: 16px;
+    -fx-padding: 34px 38px 34px 38px;
+    -fx-pref-width: 440px;
+    -fx-max-width: 440px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.45), 24, 0.2, 0, 6);
+}
+
+.login-brand-title {
+    -fx-text-fill: #F5F5F7;
+    -fx-font-size: 20px;
+    -fx-font-weight: 800;
+    -fx-letter-spacing: 2px;
+}
+
+.login-brand-subtitle {
+    -fx-text-fill: #6366F1;
+    -fx-font-size: 15px;
+    -fx-font-weight: 700;
+    -fx-letter-spacing: 2.5px;
+}
+
+.login-welcome-title {
+    -fx-text-fill: #F5F5F7;
+    -fx-font-size: 22px;
+    -fx-font-weight: 800;
+}
+
+.login-welcome-subtitle {
+    -fx-text-fill: #9695A8;
+    -fx-font-size: 13px;
+}
+
+.form-label {
+    -fx-text-fill: #9695A8;
+    -fx-font-size: 12.5px;
+    -fx-font-weight: 600;
+}
+
+.text-input {
+    -fx-background-color: #0B0A1A;
+    -fx-text-fill: #F5F5F7;
+    -fx-prompt-text-fill: #68677A;
+    -fx-border-color: rgba(255, 255, 255, 0.12);
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 10px 14px;
+    -fx-font-size: 13.5px;
+}
+
+.text-input:focused {
+    -fx-border-color: #6366F1;
+    -fx-effect: dropshadow(gaussian, rgba(99, 102, 241, 0.25), 8, 0.2, 0, 0);
+}
+
+.login-btn {
+    -fx-background-color: linear-gradient(to right, #6366F1, #8B5CF6);
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 11px 0;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+}
+
+.login-btn:hover {
+    -fx-background-color: linear-gradient(to right, #7376F7, #9B6CF8);
+    -fx-effect: dropshadow(gaussian, rgba(99, 102, 241, 0.35), 10, 0.2, 0, 0);
+}
+
+.login-btn:pressed {
+    -fx-background-color: #4F46E5;
+}
+
+.error-banner {
+    -fx-background-color: rgba(239, 68, 68, 0.12);
+    -fx-border-color: rgba(239, 68, 68, 0.35);
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 8px 12px;
+}
+
+.error-text {
+    -fx-text-fill: #EF4444;
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+}
+
+.demo-credentials-box {
+    -fx-background-color: rgba(15, 14, 32, 0.75);
+    -fx-border-color: rgba(255, 255, 255, 0.08);
+    -fx-border-width: 1px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-padding: 14px 16px;
+}
+
+.demo-pill {
+    -fx-background-color: rgba(99, 102, 241, 0.08);
+    -fx-text-fill: #A5B4FC;
+    -fx-font-size: 11.5px;
+    -fx-font-weight: 600;
+    -fx-padding: 6px 12px;
+    -fx-background-radius: 8px;
+    -fx-border-color: rgba(99, 102, 241, 0.22);
+    -fx-border-radius: 8px;
+    -fx-cursor: hand;
+}
+
+.demo-pill:hover {
+    -fx-background-color: rgba(99, 102, 241, 0.20);
+    -fx-text-fill: #FFFFFF;
+    -fx-border-color: rgba(99, 102, 241, 0.45);
+}
+
+/* -------------------------------------------------------------------------
+   Sidebar (Left Navigation)
+   ------------------------------------------------------------------------- */
+.sidebar {
+    -fx-background-color: #0F0E20;
+    -fx-border-color: rgba(255, 255, 255, 0.08);
+    -fx-border-width: 0 1px 0 0;
+    -fx-pref-width: 240px;
+    -fx-min-width: 240px;
+    -fx-max-width: 240px;
+}
+
+.brand-box {
+    -fx-padding: 24px 20px 20px 20px;
+    -fx-border-color: rgba(255, 255, 255, 0.06);
+    -fx-border-width: 0 0 1px 0;
+}
+
+.brand-title {
+    -fx-text-fill: #F5F5F7;
+    -fx-font-size: 16px;
+    -fx-font-weight: 800;
+    -fx-letter-spacing: 2px;
+}
+
+.brand-subtitle {
+    -fx-text-fill: #6366F1;
+    -fx-font-size: 13px;
+    -fx-font-weight: 700;
+    -fx-letter-spacing: 2.5px;
+}
+
+.brand-pill {
+    -fx-background-color: rgba(99, 102, 241, 0.12);
+    -fx-text-fill: #8B5CF6;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+    -fx-padding: 3 8 3 8;
+    -fx-background-radius: 10px;
+    -fx-border-color: rgba(139, 92, 246, 0.25);
+    -fx-border-radius: 10px;
+}
+
+.nav-section-title {
+    -fx-text-fill: #68677A;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-letter-spacing: 1.2px;
+    -fx-padding: 14px 12px 6px 14px;
+}
+
+.nav-item {
+    -fx-background-color: transparent;
+    -fx-text-fill: #9695A8;
+    -fx-font-size: 13.5px;
+    -fx-font-weight: 600;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 10px 14px 10px 14px;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+}
+
+.nav-item:hover {
+    -fx-background-color: #191833;
+    -fx-text-fill: #F5F5F7;
+}
+
+.nav-item-active {
+    -fx-background-color: rgba(99, 102, 241, 0.16);
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 13.5px;
+    -fx-font-weight: 700;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 10px 14px 10px 14px;
+    -fx-border-color: rgba(99, 102, 241, 0.5);
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-effect: dropshadow(gaussian, rgba(99, 102, 241, 0.2), 8, 0.2, 0, 0);
+}
+
+.nav-user-card {
+    -fx-background-color: rgba(255, 255, 255, 0.03);
+    -fx-border-color: rgba(255, 255, 255, 0.06);
+    -fx-border-width: 1px 0 0 0;
+    -fx-padding: 16px 18px 18px 18px;
+}
+
+.user-name {
+    -fx-text-fill: #F5F5F7;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.user-role {
+    -fx-text-fill: #9695A8;
+    -fx-font-size: 11px;
+}
+
+/* -------------------------------------------------------------------------
+   Main Content Layout
+   ------------------------------------------------------------------------- */
+.main-scroll-pane {
+    -fx-background-color: #0B0A1A;
+    -fx-background: #0B0A1A;
+    -fx-border-color: transparent;
+}
+
+.main-scroll-pane > .viewport {
+    -fx-background-color: #0B0A1A;
+}
+
+.main-content {
+    -fx-background-color: #0B0A1A;
+    -fx-padding: 28px 36px 36px 36px;
+}
+
+.header-title {
+    -fx-text-fill: #F5F5F7;
+    -fx-font-size: 26px;
+    -fx-font-weight: 800;
+}
+
+.header-subtitle {
+    -fx-text-fill: #9695A8;
+    -fx-font-size: 13.5px;
+}
+
+.status-pill {
+    -fx-background-color: rgba(34, 197, 94, 0.1);
+    -fx-border-color: rgba(34, 197, 94, 0.25);
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-padding: 6px 14px 6px 14px;
+}
+
+.status-pill-text {
+    -fx-text-fill: #22C55E;
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+}
+
+.status-pill-warning {
+    -fx-background-color: rgba(245, 158, 11, 0.1);
+    -fx-border-color: rgba(245, 158, 11, 0.3);
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-padding: 6px 14px 6px 14px;
+}
+
+.status-pill-warning-text {
+    -fx-text-fill: #F59E0B;
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+}
+
+/* -------------------------------------------------------------------------
+   Cards & Surfaces
+   ------------------------------------------------------------------------- */
+.dashboard-card {
+    -fx-background-color: #14132A;
+    -fx-border-color: rgba(255, 255, 255, 0.08);
+    -fx-border-width: 1px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-padding: 22px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.35), 14, 0.15, 0, 3);
+}
+
+.dashboard-card:hover {
+    -fx-border-color: rgba(99, 102, 241, 0.3);
+}
+
+.card-title {
+    -fx-text-fill: #F5F5F7;
+    -fx-font-size: 17px;
+    -fx-font-weight: 700;
+}
+
+.card-subtitle {
+    -fx-text-fill: #9695A8;
+    -fx-font-size: 12.5px;
+}
+
+/* -------------------------------------------------------------------------
+   Top Metric Cards
+   ------------------------------------------------------------------------- */
+.metric-card {
+    -fx-background-color: #14132A;
+    -fx-border-color: rgba(255, 255, 255, 0.08);
+    -fx-border-width: 1px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-padding: 18px 22px 18px 22px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.15, 0, 2);
+}
+
+.metric-card:hover {
+    -fx-background-color: #191833;
+    -fx-border-color: rgba(99, 102, 241, 0.35);
+}
+
+.metric-label {
+    -fx-text-fill: #9695A8;
+    -fx-font-size: 13px;
+    -fx-font-weight: 600;
+}
+
+.metric-value {
+    -fx-text-fill: #F5F5F7;
+    -fx-font-size: 30px;
+    -fx-font-weight: 800;
+}
+
+.metric-subtext {
+    -fx-text-fill: #68677A;
+    -fx-font-size: 12px;
+}
+
+/* -------------------------------------------------------------------------
+   Badges & Tags
+   ------------------------------------------------------------------------- */
+.badge-success {
+    -fx-background-color: rgba(34, 197, 94, 0.14);
+    -fx-text-fill: #22C55E;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-padding: 3 8 3 8;
+    -fx-background-radius: 10px;
+    -fx-border-color: rgba(34, 197, 94, 0.25);
+    -fx-border-radius: 10px;
+}
+
+.badge-indigo {
+    -fx-background-color: rgba(99, 102, 241, 0.14);
+    -fx-text-fill: #6366F1;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-padding: 3 8 3 8;
+    -fx-background-radius: 10px;
+    -fx-border-color: rgba(99, 102, 241, 0.25);
+    -fx-border-radius: 10px;
+}
+
+.badge-purple {
+    -fx-background-color: rgba(139, 92, 246, 0.14);
+    -fx-text-fill: #8B5CF6;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-padding: 3 8 3 8;
+    -fx-background-radius: 10px;
+    -fx-border-color: rgba(139, 92, 246, 0.25);
+    -fx-border-radius: 10px;
+}
+
+.badge-neutral {
+    -fx-background-color: rgba(255, 255, 255, 0.06);
+    -fx-text-fill: #9695A8;
+    -fx-font-size: 11px;
+    -fx-font-weight: 600;
+    -fx-padding: 3 8 3 8;
+    -fx-background-radius: 10px;
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-border-radius: 10px;
+}
+
+/* -------------------------------------------------------------------------
+   Event Cards (Inside Active / Upcoming Events)
+   ------------------------------------------------------------------------- */
+.event-item-card {
+    -fx-background-color: rgba(15, 14, 32, 0.65);
+    -fx-border-color: rgba(255, 255, 255, 0.07);
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 16px;
+}
+
+.event-item-card:hover {
+    -fx-background-color: rgba(25, 24, 51, 0.85);
+    -fx-border-color: rgba(99, 102, 241, 0.4);
+    -fx-effect: dropshadow(gaussian, rgba(99, 102, 241, 0.15), 10, 0.2, 0, 2);
+}
+
+.event-title {
+    -fx-text-fill: #F5F5F7;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+.event-meta {
+    -fx-text-fill: #9695A8;
+    -fx-font-size: 12px;
+}
+
+.event-capacity {
+    -fx-text-fill: #9695A8;
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+}
+
+/* -------------------------------------------------------------------------
+   Empty State Display Box
+   ------------------------------------------------------------------------- */
+.empty-state-box {
+    -fx-background-color: rgba(15, 14, 32, 0.5);
+    -fx-border-color: rgba(255, 255, 255, 0.08);
+    -fx-border-style: dashed;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 24px 20px;
+    -fx-alignment: CENTER;
+}
+
+.empty-state-title {
+    -fx-text-fill: #F5F5F7;
+    -fx-font-size: 13.5px;
+    -fx-font-weight: bold;
+}
+
+.empty-state-sub {
+    -fx-text-fill: #68677A;
+    -fx-font-size: 12px;
+}
+
+/* -------------------------------------------------------------------------
+   Activity Stat Rows
+   ------------------------------------------------------------------------- */
+.activity-stat-row {
+    -fx-padding: 10px 6px 10px 6px;
+    -fx-border-color: rgba(255, 255, 255, 0.05);
+    -fx-border-width: 0 0 1px 0;
+}
+
+.activity-stat-label {
+    -fx-text-fill: #F5F5F7;
+    -fx-font-size: 13px;
+    -fx-font-weight: 500;
+}
+
+.activity-stat-value {
+    -fx-text-fill: #6366F1;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+/* -------------------------------------------------------------------------
+   Combo Box Styling (Dark SaaS Theme)
+   ------------------------------------------------------------------------- */
+.combo-box {
+    -fx-background-color: #0B0A1A;
+    -fx-border-color: rgba(255, 255, 255, 0.12);
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 4px 8px;
+    -fx-font-size: 13px;
+}
+
+.combo-box:focused,
+.combo-box:showing {
+    -fx-border-color: #6366F1;
+    -fx-effect: dropshadow(gaussian, rgba(99, 102, 241, 0.25), 8, 0.2, 0, 0);
+}
+
+.combo-box .cell {
+    -fx-text-fill: #F5F5F7;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: #14132A;
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 4px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.45), 14, 0.2, 0, 4);
+}
+
+.combo-box-popup .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #9695A8;
+    -fx-padding: 8px 12px;
+    -fx-background-radius: 6px;
+}
+
+.combo-box-popup .list-cell:hover,
+.combo-box-popup .list-cell:filled:selected {
+    -fx-background-color: rgba(99, 102, 241, 0.2);
+    -fx-text-fill: #FFFFFF;
+}
+
+/* -------------------------------------------------------------------------
+   Event Grid Card (Discovery View)
+   ------------------------------------------------------------------------- */
+.event-grid-card {
+    -fx-background-color: #14132A;
+    -fx-border-color: rgba(255, 255, 255, 0.08);
+    -fx-border-width: 1px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-padding: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.35), 14, 0.15, 0, 3);
+    -fx-cursor: hand;
+}
+
+.event-grid-card:hover {
+    -fx-background-color: #191833;
+    -fx-border-color: rgba(99, 102, 241, 0.4);
+    -fx-effect: dropshadow(gaussian, rgba(99, 102, 241, 0.2), 16, 0.2, 0, 4);
+}
+
+/* -------------------------------------------------------------------------
+   Event Detail View Styling
+   ------------------------------------------------------------------------- */
+.back-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #6366F1;
+    -fx-font-size: 13.5px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-padding: 4px 8px;
+}
+
+.back-button:hover {
+    -fx-text-fill: #8B5CF6;
+}
+
+.event-detail-card {
+    -fx-background-color: #14132A;
+    -fx-border-color: rgba(255, 255, 255, 0.08);
+    -fx-border-width: 1px;
+    -fx-border-radius: 16px;
+    -fx-background-radius: 16px;
+    -fx-padding: 30px 34px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 18, 0.2, 0, 4);
+}
+
+.event-detail-title {
+    -fx-text-fill: #F5F5F7;
+    -fx-font-size: 24px;
+    -fx-font-weight: 800;
+}
+
+.event-detail-desc {
+    -fx-text-fill: #9695A8;
+    -fx-font-size: 13.5px;
+    -fx-line-spacing: 4px;
+}
+
+.info-pill-box {
+    -fx-background-color: rgba(15, 14, 32, 0.7);
+    -fx-border-color: rgba(255, 255, 255, 0.06);
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 14px 18px;
+}
+
+.action-notice-box {
+    -fx-background-color: rgba(99, 102, 241, 0.08);
+    -fx-border-color: rgba(99, 102, 241, 0.25);
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 16px 20px;
+}
+
+/* -------------------------------------------------------------------------
+   Phase 6: Modal Dialogs (Confirmation & Registration Success)
+   ------------------------------------------------------------------------- */
+.dialog-overlay {
+    -fx-background-color: rgba(11, 10, 26, 0.78);
+    -fx-alignment: center;
+    -fx-padding: 24px;
+}
+
+.modal-dialog-card {
+    -fx-background-color: #14132A;
+    -fx-border-color: rgba(255, 255, 255, 0.12);
+    -fx-border-width: 1px;
+    -fx-border-radius: 14px;
+    -fx-background-radius: 14px;
+    -fx-padding: 26px 30px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.6), 24, 0.3, 0, 6);
+    -fx-max-width: 460px;
+}
+
+.modal-title {
+    -fx-text-fill: #F5F5F7;
+    -fx-font-size: 19px;
+    -fx-font-weight: 800;
+}
+
+.modal-subtitle {
+    -fx-text-fill: #9695A8;
+    -fx-font-size: 13px;
+    -fx-line-spacing: 2px;
+}
+
+.badge-warning {
+    -fx-background-color: rgba(245, 158, 11, 0.14);
+    -fx-text-fill: #F59E0B;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-padding: 3 8 3 8;
+    -fx-background-radius: 10px;
+    -fx-border-color: rgba(245, 158, 11, 0.25);
+    -fx-border-radius: 10px;
+}
+
+.badge-danger {
+    -fx-background-color: rgba(239, 68, 68, 0.14);
+    -fx-text-fill: #EF4444;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-padding: 3 8 3 8;
+    -fx-background-radius: 10px;
+    -fx-border-color: rgba(239, 68, 68, 0.25);
+    -fx-border-radius: 10px;
+}
+
+.reg-id-pill {
+    -fx-background-color: rgba(99, 102, 241, 0.12);
+    -fx-border-color: rgba(99, 102, 241, 0.35);
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-text-fill: #6366F1;
+    -fx-font-size: 14px;
+    -fx-font-weight: 800;
+    -fx-padding: 6px 14px;
+}
+
+/* -------------------------------------------------------------------------
+   Buttons
+   ------------------------------------------------------------------------- */
+.primary-btn {
+    -fx-background-color: linear-gradient(to right, #6366F1, #8B5CF6);
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 12.5px;
+    -fx-font-weight: bold;
+    -fx-padding: 7px 16px 7px 16px;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+}
+
+.primary-btn:hover {
+    -fx-background-color: linear-gradient(to right, #7376F7, #9B6CF8);
+    -fx-effect: dropshadow(gaussian, rgba(99, 102, 241, 0.35), 8, 0.2, 0, 0);
+}
+
+.secondary-btn {
+    -fx-background-color: rgba(255, 255, 255, 0.05);
+    -fx-text-fill: #9695A8;
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+    -fx-padding: 6px 12px 6px 12px;
+    -fx-background-radius: 6px;
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-border-radius: 6px;
+    -fx-cursor: hand;
+}
+
+.secondary-btn:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.09);
+    -fx-text-fill: #F5F5F7;
+}
+
+/* -------------------------------------------------------------------------
+   Campus Pulse & Activity Feed
+   ------------------------------------------------------------------------- */
+.pulse-item {
+    -fx-padding: 10px 4px 10px 4px;
+    -fx-border-color: rgba(255, 255, 255, 0.05);
+    -fx-border-width: 0 0 1px 0;
+}
+
+.pulse-text {
+    -fx-text-fill: #F5F5F7;
+    -fx-font-size: 13px;
+    -fx-font-weight: 500;
+}
+
+.pulse-time {
+    -fx-text-fill: #68677A;
+    -fx-font-size: 11.5px;
+}
+
+.pulse-summary-box {
+    -fx-background-color: rgba(15, 14, 32, 0.65);
+    -fx-border-color: rgba(255, 255, 255, 0.07);
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 12px 14px 12px 14px;
+}
+
+/* -------------------------------------------------------------------------
+   Progress Bar Customization
+   ------------------------------------------------------------------------- */
+.progress-bar {
+    -fx-pref-height: 7px;
+    -fx-min-height: 7px;
+}
+
+.progress-bar .track {
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+    -fx-background-radius: 6px;
+}
+
+.progress-bar .bar {
+    -fx-background-color: linear-gradient(to right, #6366F1, #8B5CF6);
+    -fx-background-radius: 6px;
+    -fx-padding: 0;
+}
+
+/* -------------------------------------------------------------------------
+   Chart Styling (Dark SaaS Theme)
+   ------------------------------------------------------------------------- */
+.chart {
+    -fx-padding: 0px;
+    -fx-background-color: transparent;
+}
+
+.chart-plot-background {
+    -fx-background-color: transparent;
+}
+
+.chart-vertical-grid-lines,
+.chart-horizontal-grid-lines {
+    -fx-stroke: rgba(255, 255, 255, 0.05);
+    -fx-stroke-dash-array: 3 4;
+}
+
+.axis {
+    -fx-tick-label-fill: #9695A8;
+    -fx-font-size: 11px;
+    -fx-tick-label-gap: 5px;
+}
+
+.axis-label {
+    -fx-text-fill: #9695A8;
+    -fx-font-size: 11.5px;
+    -fx-font-weight: 600;
+}
+
+.axis:bottom,
+.axis:left {
+    -fx-border-color: transparent;
+}
+
+.axis-tick-mark,
+.axis-minor-tick-mark {
+    -fx-stroke: rgba(255, 255, 255, 0.08);
+}
+
+.default-color0.chart-series-area-line {
+    -fx-stroke: #6366F1;
+    -fx-stroke-width: 2.5px;
+}
+
+.default-color0.chart-series-area-fill {
+    -fx-fill: rgba(99, 102, 241, 0.16);
+}
+
+.chart-area-symbol {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-padding: 0;
+}
+
+.default-color0.chart-area-symbol,
+.default-color0.chart-line-symbol {
+    -fx-background-color: #6366F1, #14132A;
+    -fx-background-insets: 0, 2;
+    -fx-background-radius: 6px;
+    -fx-padding: 3.5px;
+}
+
+.default-color1.chart-series-area-line {
+    -fx-stroke: #8B5CF6;
+    -fx-stroke-width: 2px;
+}
+
+.default-color1.chart-series-area-fill {
+    -fx-fill: rgba(139, 92, 246, 0.10);
+}
+
+.default-color1.chart-area-symbol,
+.default-color1.chart-line-symbol {
+    -fx-background-color: #8B5CF6, #14132A;
+    -fx-background-insets: 0, 2;
+    -fx-background-radius: 6px;
+    -fx-padding: 3.5px;
+}
+
+.default-color0.chart-legend-item-symbol {
+    -fx-background-color: #6366F1;
+    -fx-background-radius: 4px;
+}
+
+.default-color1.chart-legend-item-symbol {
+    -fx-background-color: #8B5CF6;
+    -fx-background-radius: 4px;
+}
+
+.chart-legend {
+    -fx-background-color: transparent;
+    -fx-padding: 6px 0 0 0;
+}
+
+.chart-legend-item {
+    -fx-text-fill: #F5F5F7;
+    -fx-font-size: 12px;
+}
+
+/* -------------------------------------------------------------------------
+   Scrollbar Clean Aesthetics
+   ------------------------------------------------------------------------- */
+.scroll-bar:vertical,
+.scroll-bar:horizontal {
+    -fx-background-color: transparent;
+    -fx-pref-width: 8px;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: rgba(255, 255, 255, 0.12);
+    -fx-background-radius: 4px;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.22);
+}
+
+.scroll-bar .track,
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-opacity: 0;
+}
+
+/* -------------------------------------------------------------------------
+   Phase 7: My Events & Filter Pills
+   ------------------------------------------------------------------------- */
+.filter-pill {
+    -fx-background-color: rgba(255, 255, 255, 0.05);
+    -fx-text-fill: #9695A8;
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+    -fx-padding: 6px 14px;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+}
+
+.filter-pill:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-text-fill: #F5F5F7;
+}
+
+.filter-pill-active {
+    -fx-background-color: #6366F1;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 12px;
+    -fx-font-weight: 700;
+    -fx-padding: 6px 14px;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+}
+
+/* -------------------------------------------------------------------------
+   Phase 9: Event Management & Admin Actions
+   ------------------------------------------------------------------------- */
+.danger-btn {
+    -fx-background-color: rgba(239, 68, 68, 0.12);
+    -fx-text-fill: #EF4444;
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+    -fx-padding: 6px 14px;
+    -fx-background-radius: 6px;
+    -fx-border-color: rgba(239, 68, 68, 0.35);
+    -fx-border-radius: 6px;
+    -fx-cursor: hand;
+}
+
+.danger-btn:hover {
+    -fx-background-color: rgba(239, 68, 68, 0.28);
+    -fx-text-fill: #FF7777;
+    -fx-border-color: rgba(239, 68, 68, 0.6);
+}
+
+.danger-btn-solid {
+    -fx-background-color: #EF4444;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 18px;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+}
+
+.danger-btn-solid:hover {
+    -fx-background-color: #DC2626;
+    -fx-effect: dropshadow(gaussian, rgba(239, 68, 68, 0.35), 8, 0.2, 0, 0);
+}
+
+.modal-dialog-large {
+    -fx-background-color: #14132A;
+    -fx-border-color: rgba(255, 255, 255, 0.14);
+    -fx-border-width: 1px;
+    -fx-border-radius: 16px;
+    -fx-background-radius: 16px;
+    -fx-padding: 24px 30px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.65), 28, 0.3, 0, 8);
+    -fx-pref-width: 580px;
+    -fx-max-width: 620px;
+}
+
+.dialog-scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+}
+
+.dialog-scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.success-banner {
+    -fx-background-color: rgba(34, 197, 94, 0.12);
+    -fx-border-color: rgba(34, 197, 94, 0.35);
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 10px 14px;
+}
+
+.success-banner-text {
+    -fx-text-fill: #22C55E;
+    -fx-font-size: 12.5px;
+    -fx-font-weight: 600;
+}
+
+.text-area {
+    -fx-background-color: #0B0A1A;
+    -fx-text-fill: #F5F5F7;
+    -fx-prompt-text-fill: #68677A;
+    -fx-border-color: rgba(255, 255, 255, 0.12);
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-font-size: 13px;
+    -fx-padding: 4px;
+}
+
+.text-area .content {
+    -fx-background-color: #0B0A1A;
+    -fx-background-radius: 8px;
+}
+
+.text-area:focused {
+    -fx-border-color: #6366F1;
+    -fx-effect: dropshadow(gaussian, rgba(99, 102, 241, 0.25), 8, 0.2, 0, 0);
+}
+
+.date-picker {
+    -fx-background-color: #0B0A1A;
+    -fx-border-color: rgba(255, 255, 255, 0.12);
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-font-size: 13px;
+}
+
+.date-picker .text-field {
+    -fx-background-color: transparent;
+    -fx-text-fill: #F5F5F7;
+    -fx-prompt-text-fill: #68677A;
+    -fx-border-width: 0;
+    -fx-padding: 9px 12px;
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+.date-picker .arrow-button .arrow {
+    -fx-background-color: #6366F1;
+}
+
+.date-picker-popup {
+    -fx-background-color: #14132A;
+    -fx-border-color: rgba(255, 255, 255, 0.14);
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.6), 16, 0.2, 0, 4);
+}
+
+.date-picker-popup .spinner-label {
+    -fx-text-fill: #F5F5F7;
+}
+
+.date-picker-popup .day-name-cell {
+    -fx-text-fill: #9695A8;
+}
+
+.date-picker-popup .day-cell {
+    -fx-background-color: #14132A;
+    -fx-text-fill: #F5F5F7;
+}
+
+.date-picker-popup .day-cell:hover {
+    -fx-background-color: rgba(99, 102, 241, 0.25);
+    -fx-text-fill: #FFFFFF;
+}
+
+.date-picker-popup .selected {
+    -fx-background-color: #6366F1;
+    -fx-text-fill: #FFFFFF;
+}
+
+/* -------------------------------------------------------------------------
+   Phase 10: Registration Management & Status Actions
+   ------------------------------------------------------------------------- */
+.action-approve-btn {
+    -fx-background-color: rgba(34, 197, 94, 0.14);
+    -fx-text-fill: #22C55E;
+    -fx-font-size: 12px;
+    -fx-font-weight: 700;
+    -fx-padding: 6px 14px;
+    -fx-background-radius: 6px;
+    -fx-border-color: rgba(34, 197, 94, 0.38);
+    -fx-border-radius: 6px;
+    -fx-cursor: hand;
+}
+
+.action-approve-btn:hover {
+    -fx-background-color: rgba(34, 197, 94, 0.28);
+    -fx-text-fill: #4ADE80;
+    -fx-border-color: rgba(34, 197, 94, 0.65);
+}
+
+.action-approve-btn-solid {
+    -fx-background-color: #16A34A;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 18px;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+}
+
+.action-approve-btn-solid:hover {
+    -fx-background-color: #15803D;
+    -fx-effect: dropshadow(gaussian, rgba(34, 197, 94, 0.35), 8, 0.2, 0, 0);
+}
+
+.stat-counter-pill {
+    -fx-background-color: #14132A;
+    -fx-border-color: rgba(255, 255, 255, 0.08);
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px 16px;
+}
+
+.stat-counter-number {
+    -fx-font-size: 18px;
+    -fx-font-weight: 800;
+}
+
+.stat-counter-label {
+    -fx-font-size: 11.5px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #9695A8;
+}
+
+/* -------------------------------------------------------------------------
+   Phase 12: Certificate Management & Certificate Preview
+   ------------------------------------------------------------------------- */
+.certificate-preview-dialog {
+    -fx-background-color: #0F0E24;
+    -fx-border-color: #F59E0B, rgba(245, 158, 11, 0.3);
+    -fx-border-width: 2px, 1px;
+    -fx-border-insets: 0, 8px;
+    -fx-border-radius: 16px, 10px;
+    -fx-background-radius: 16px;
+    -fx-padding: 36px 42px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 32, 0.4, 0, 10);
+    -fx-pref-width: 680px;
+    -fx-max-width: 720px;
+}
+
+.certificate-brand {
+    -fx-text-fill: #F59E0B;
+    -fx-font-size: 13px;
+    -fx-font-weight: 800;
+    -fx-letter-spacing: 3px;
+}
+
+.certificate-title {
+    -fx-text-fill: #F5F5F7;
+    -fx-font-size: 26px;
+    -fx-font-weight: 900;
+    -fx-letter-spacing: 1.5px;
+}
+
+.certificate-recipient {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 24px;
+    -fx-font-weight: 900;
+}
+
+.certificate-seal {
+    -fx-background-color: rgba(245, 158, 11, 0.15);
+    -fx-border-color: #F59E0B;
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-padding: 6px 14px;
+    -fx-text-fill: #F59E0B;
+    -fx-font-size: 11.5px;
+    -fx-font-weight: bold;
+}
+
+.gold-btn-solid {
+    -fx-background-color: #D97706;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 18px;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+}
+
+.gold-btn-solid:hover {
+    -fx-background-color: #B45309;
+    -fx-effect: dropshadow(gaussian, rgba(217, 119, 6, 0.4), 10, 0.2, 0, 0);
+}
+
+/* -------------------------------------------------------------------------
+   Phase 13: Feedback Management & Rating Styles
+   ------------------------------------------------------------------------- */
+.feedback-card {
+    -fx-background-color: #14132A;
+    -fx-border-color: rgba(255, 255, 255, 0.08);
+    -fx-border-width: 1px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-padding: 18px 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 10, 0.1, 0, 2);
+}
+
+.feedback-card:hover {
+    -fx-border-color: rgba(99, 102, 241, 0.35);
+}
+
+.feedback-quote-box {
+    -fx-background-color: rgba(11, 10, 26, 0.65);
+    -fx-border-color: rgba(255, 255, 255, 0.06);
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 12px 14px;
+}
+
+.feedback-comment-text {
+    -fx-text-fill: #E2E2E8;
+    -fx-font-size: 13px;
+    -fx-line-spacing: 3px;
+}
+
+.star-rating-box {
+    -fx-background-color: transparent;
+    -fx-alignment: CENTER_LEFT;
+    -fx-spacing: 4px;
+}
+
+.star-btn {
+    -fx-background-color: rgba(255, 255, 255, 0.05);
+    -fx-text-fill: #68677A;
+    -fx-font-size: 22px;
+    -fx-padding: 4px 10px;
+    -fx-background-radius: 8px;
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-border-radius: 8px;
+    -fx-cursor: hand;
+}
+
+.star-btn:hover {
+    -fx-background-color: rgba(245, 158, 11, 0.2);
+    -fx-text-fill: #F59E0B;
+    -fx-border-color: rgba(245, 158, 11, 0.5);
+}
+
+.star-btn-active {
+    -fx-background-color: rgba(245, 158, 11, 0.25);
+    -fx-text-fill: #F59E0B;
+    -fx-font-size: 22px;
+    -fx-padding: 4px 10px;
+    -fx-background-radius: 8px;
+    -fx-border-color: #F59E0B;
+    -fx-border-radius: 8px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(245, 158, 11, 0.35), 8, 0.2, 0, 0);
+}
+
+.star-label-gold {
+    -fx-text-fill: #F59E0B;
+    -fx-font-size: 15px;
+    -fx-font-weight: 700;
+}
+
+.star-score-pill {
+    -fx-background-color: rgba(245, 158, 11, 0.12);
+    -fx-text-fill: #F59E0B;
+    -fx-font-size: 11.5px;
+    -fx-font-weight: bold;
+    -fx-padding: 3px 10px;
+    -fx-background-radius: 12px;
+    -fx-border-color: rgba(245, 158, 11, 0.3);
+    -fx-border-radius: 12px;
+}
+
+.feedback-modal-dialog {
+    -fx-background-color: #14132A;
+    -fx-border-color: rgba(255, 255, 255, 0.14);
+    -fx-border-width: 1px;
+    -fx-border-radius: 16px;
+    -fx-background-radius: 16px;
+    -fx-padding: 30px 36px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.75), 32, 0.35, 0, 8);
+    -fx-pref-width: 540px;
+    -fx-max-width: 580px;
+}
+
+/* -------------------------------------------------------------------------
+   Phase 14: Analytics Charts & Visual Intelligence
+   ------------------------------------------------------------------------- */
+.bar-chart .chart-bar {
+    -fx-bar-fill: #6366F1;
+    -fx-background-radius: 4px 4px 0 0;
+}
+
+.default-color0.chart-bar {
+    -fx-bar-fill: #6366F1;
+}
+
+.default-color1.chart-bar {
+    -fx-bar-fill: #8B5CF6;
+}
+
+.default-color2.chart-bar {
+    -fx-bar-fill: #3B82F6;
+}
+
+.pie-chart {
+    -fx-pie-label-visible: true;
+}
+
+.pie-chart .chart-pie-label {
+    -fx-fill: #F5F5F7;
+    -fx-font-size: 11px;
+    -fx-font-weight: 600;
+}
+
+.default-color0.chart-pie {
+    -fx-pie-color: #22C55E;
+}
+
+.default-color1.chart-pie {
+    -fx-pie-color: #F59E0B;
+}
+
+.default-color2.chart-pie {
+    -fx-pie-color: #F43F5E;
+}
+
+/* -------------------------------------------------------------------------
+   Phase 16: Refined Design Tokens & Missing UI Components
+   ------------------------------------------------------------------------- */
+.kpi-card {
+    -fx-background-color: #14132A;
+    -fx-border-color: rgba(255, 255, 255, 0.08);
+    -fx-border-width: 1px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-padding: 16px 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 10, 0.12, 0, 2);
+}
+
+.kpi-card:hover {
+    -fx-background-color: #191833;
+    -fx-border-color: rgba(99, 102, 241, 0.35);
+}
+
+.filter-chip {
+    -fx-background-color: rgba(255, 255, 255, 0.05);
+    -fx-text-fill: #9695A8;
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+    -fx-padding: 6px 14px;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+}
+
+.filter-chip:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-text-fill: #F5F5F7;
+}
+
+.filter-chip-active {
+    -fx-background-color: #6366F1;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 12px;
+    -fx-font-weight: 700;
+    -fx-padding: 6px 14px;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+}
+
+.filter-bar-card {
+    -fx-background-color: #14132A;
+    -fx-border-color: rgba(255, 255, 255, 0.08);
+    -fx-border-width: 1px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-padding: 14px 18px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 10, 0.12, 0, 2);
+}
+
+.search-field {
+    -fx-background-color: #0B0A1A;
+    -fx-text-fill: #F5F5F7;
+    -fx-prompt-text-fill: #68677A;
+    -fx-border-color: rgba(255, 255, 255, 0.12);
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 8px 14px;
+    -fx-font-size: 13px;
+}
+
+.search-field:focused {
+    -fx-border-color: #6366F1;
+    -fx-effect: dropshadow(gaussian, rgba(99, 102, 241, 0.25), 8, 0.2, 0, 0);
+}
+
+.dialog-box {
+    -fx-background-color: #14132A;
+    -fx-border-color: rgba(255, 255, 255, 0.14);
+    -fx-border-width: 1px;
+    -fx-border-radius: 16px;
+    -fx-background-radius: 16px;
+    -fx-padding: 24px 30px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.65), 28, 0.3, 0, 8);
+    -fx-max-width: 480px;
+}
+
+.dialog-title {
+    -fx-text-fill: #F5F5F7;
+    -fx-font-size: 18px;
+    -fx-font-weight: 800;
+}
+
+/* -------------------------------------------------------------------------
+   TableView & List Controls (Dark SaaS Theme)
+   ------------------------------------------------------------------------- */
+.table-view {
+    -fx-background-color: transparent;
+    -fx-border-color: rgba(255, 255, 255, 0.08);
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #0F0E24;
+    -fx-background-radius: 10px 10px 0 0;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-font-size: 12px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #9695A8;
+    -fx-padding: 10px 12px;
+}
+
+.table-view .table-row-cell {
+    -fx-background-color: #14132A;
+    -fx-border-color: rgba(255, 255, 255, 0.04);
+    -fx-border-width: 0 0 1px 0;
+    -fx-padding: 4px 0;
+}
+
+.table-view .table-row-cell:odd {
+    -fx-background-color: #111024;
+}
+
+.table-view .table-row-cell:hover {
+    -fx-background-color: #191833;
+}
+
+.table-view .table-row-cell:filled:selected {
+    -fx-background-color: rgba(99, 102, 241, 0.22);
+}
+
+.table-view .table-cell {
+    -fx-text-fill: #F5F5F7;
+    -fx-font-size: 12.5px;
+    -fx-padding: 8px 12px;
+}
+
+/* -------------------------------------------------------------------------
+   Keyboard Focus Indicators
+   ------------------------------------------------------------------------- */
+.button:focused,
+.primary-btn:focused,
+.secondary-btn:focused,
+.danger-btn:focused,
+.danger-btn-solid:focused,
+.action-approve-btn:focused,
+.action-approve-btn-solid:focused,
+.gold-btn-solid:focused,
+.filter-pill:focused,
+.filter-chip:focused {
+    -fx-border-color: #8B5CF6;
+    -fx-effect: dropshadow(gaussian, rgba(139, 92, 246, 0.4), 6, 0.2, 0, 0);
+}

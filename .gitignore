@@ -1,0 +1,58 @@
+# =============================================================================
+# Campus Connect — .gitignore (Private Repository Hygiene)
+# =============================================================================
+
+# Environment & Secrets (NEVER commit credentials to version control)
+.env
+.env.local
+.env.*
+!.env.example
+*.env
+
+# Maven build outputs
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Compiled Java bytecode (outside target)
+*.class
+
+# Package archives (executables should be built via Maven, not tracked)
+*.jar
+*.war
+*.ear
+
+# IDE & Editor files
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.settings/
+.project
+.classpath
+nbproject/private/
+build/
+nbbuild/
+dist/
+
+# Editor temporary & swap files
+*.swp
+*.swo
+*~
+*.bak
+
+# JVM crash dumps & logs
+*.log
+hs_err_pid*.log
+replay_pid*.log
+
+# Operating System files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.directory
